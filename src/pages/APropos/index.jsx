@@ -1,10 +1,12 @@
 import '../../styles/Apropos.scss'
+import Banner from '../../components/Banner'
+import montagne from '../../assets/banner/montagne.png'
 
 function APropos() {
   return (
     <main>
-      <div className="apropos-content">
-        <h1>A PROPOS</h1>
+      <div className="home-content">
+        <Banner image={montagne} altImage="Montagnes enneigées" />
       </div>
     </main>
   )
