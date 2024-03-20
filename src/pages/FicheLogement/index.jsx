@@ -1,5 +1,13 @@
+import '../../styles/FicheLogement.scss'
+
 function FicheLogement() {
-  return <h1>FicheLogement Page</h1>
+  return (
+    <main>
+      <div className="logement-content">
+        <h1>FICHE LOGEMENT</h1>
+      </div>
+    </main>
+  )
 }
 
 export default FicheLogement

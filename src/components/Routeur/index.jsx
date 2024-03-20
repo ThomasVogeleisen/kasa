@@ -3,6 +3,7 @@ import Header from '../Header'
 import Footer from '../Footer'
 import Home from '../../pages/Home'
 import APropos from '../../pages/APropos'
+import FicheLogement from '../../pages/FicheLogement'
 import Error from '../../pages/Error'
 
 function Routeur() {
@@ -13,6 +14,7 @@ function Routeur() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/A-Propos" element={<APropos />} />
+        <Route path="/FicheLogement" element={<FicheLogement />} />
         <Route path="*" element={<Error />} />
       </Routes>
 

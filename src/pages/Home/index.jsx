@@ -1,5 +1,13 @@
+import '../../styles/Home.scss'
+
 function Home() {
-  return <h1>Home Page</h1>
+  return (
+    <main>
+      <div className="home-content">
+        <h1>HomePage</h1>
+      </div>
+    </main>
+  )
 }
 
 export default Home
