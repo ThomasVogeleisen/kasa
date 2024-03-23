@@ -11,12 +11,21 @@
   font-size: 288px;
   font-weight: 700;
   margin: 85px 0 139px 0;
+  @media (max-width: 750px) {
+    font-size: 96px;
+    margin: 93px 0 113px 0;
+  }
 }
 
 .error-text {
   font-size: 36px;
   font-weight: 500;
   margin: 0;
+  text-align: center;
+  @media (max-width: 750px) {
+    font-size: 18px;
+    padding: 0 20px;
+  }
 }
 
 .error-text-link {
@@ -25,4 +34,8 @@
   color: $black;
   text-decoration: underline;
   margin: 139px;
+  @media (max-width: 750px) {
+    font-size: 14px;
+    margin: 113px 0 113px 0;
+  }
 }

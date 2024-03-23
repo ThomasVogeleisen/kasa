@@ -7,7 +7,6 @@ function Colapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const contentRef = useRef()
-  if (contentRef.current) console.log(contentRef.current.scrollHeight)
 
   function toggleCollapse() {
     setIsOpen(!isOpen)

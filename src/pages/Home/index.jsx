@@ -1,5 +1,7 @@
 import './style.scss'
+import logements from '../../datas/logements'
 import Banner from '../../components/Banner'
+import Card from '../../components/Card'
 import bord_de_mer from '../../assets/banner/bord_de_mer.png'
 
 function Home() {
@@ -11,6 +13,26 @@ function Home() {
           image={bord_de_mer}
           altImage="Photo de falaises en bord de mer"
         />
+        <div className="cards-container">
+          {logements.map((logement) => (
+            <Card
+              key={logement.id}
+              id={logement.id}
+              title={logement.title}
+              cover={logement.cover}
+              pictures={logement.pictures}
+              description={logement.description}
+              host={logement.host}
+              rating={logement.rating}
+              location={logement.location}
+              equipments={logement.equipments}
+              tags={logement.tags}
+              style={{
+                backgroundImage: `url('${logement.cover}')`,
+              }}
+            />
+          ))}
+        </div>
       </div>
     </main>
   )

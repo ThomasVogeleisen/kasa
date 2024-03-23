@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $grey-light;
+  border-radius: 25px;
+  padding: 31px 20px;
+  margin-bottom: 50px;
+  @media (max-width: 1015px) {
+    background-color: $white;
+    margin-bottom: 7px;
+    padding: 0;
+  }
+}
