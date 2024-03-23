@@ -4,4 +4,7 @@
   max-width: 1023px;
   margin: auto;
   margin-bottom: 30px;
+  @media (max-width: 750px) {
+    margin-bottom: 20px;
+  }
 }
