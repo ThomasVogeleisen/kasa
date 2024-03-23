@@ -1,4 +1,4 @@
-import '../../styles/Footer.scss'
+import './style.scss'
 import logo_white from '../../assets/logo_white.png'
 
 function Footer() {

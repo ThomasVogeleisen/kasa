@@ -1,4 +1,4 @@
-import '../../styles/FicheLogement.scss'
+import './style.scss'
 
 function FicheLogement() {
   return (

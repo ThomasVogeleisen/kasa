@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.collapse-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: $white;
+  background-color: $light-red;
+}
+
+.collapse-title-h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.collapse-title-btn {
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rotate-btn {
+  transform: rotate(-180deg);
+}
+
+.collapse-content {
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.collapse-text-content {
+  text-align: left;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 0;
+  padding: 20px;
+  background-color: $grey-light;
+}

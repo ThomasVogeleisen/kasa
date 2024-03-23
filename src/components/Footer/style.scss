@@ -1,7 +1,9 @@
+@import '../../styles/variables.scss';
+
 footer {
   height: 209px;
-  background-color: #000;
-  color: #fff;
+  background-color: $black;
+  color: $white;
 }
 
 .footer-logo {
