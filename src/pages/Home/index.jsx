@@ -19,14 +19,6 @@ function Home() {
               key={logement.id}
               id={logement.id}
               title={logement.title}
-              cover={logement.cover}
-              pictures={logement.pictures}
-              description={logement.description}
-              host={logement.host}
-              rating={logement.rating}
-              location={logement.location}
-              equipments={logement.equipments}
-              tags={logement.tags}
               style={{
                 backgroundImage: `url('${logement.cover}')`,
               }}

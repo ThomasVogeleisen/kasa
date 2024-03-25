@@ -14,7 +14,7 @@ function Routeur() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/A-Propos" element={<APropos />} />
-        <Route path="/FicheLogement" element={<FicheLogement />} />
+        <Route path="/FicheLogement/:idLogement" element={<FicheLogement />} />
         <Route path="*" element={<Error />} />
       </Routes>
 
