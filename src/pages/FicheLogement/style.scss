@@ -1,4 +1,77 @@
 @import '../../styles/variables.scss';
 
-.logement-content {
+.logement-bloc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+}
+
+.logement-bloc__desc {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  &--title {
+    margin: 0;
+    color: $light-red;
+    font-size: 36px;
+    font-weight: 500;
+    @media (max-width: 750px) {
+      font-size: 18px;
+    }
+  }
+
+  &--location {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    @media (max-width: 750px) {
+      font-size: 14px;
+    }
+  }
+
+  &--tags {
+    margin-top: 10px;
+  }
+  @media (max-width: 750px) {
+    width: 100%;
+  }
+}
+
+.logement-bloc__rate {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  &--host {
+  }
+
+  &--rate {
+  }
+  @media (max-width: 750px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.logement-colapses {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 24px;
+
+  &__colapse {
+    width: 48%;
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 }
