@@ -28,10 +28,19 @@ function FicheLogement() {
         </div>
         <div className="logement-colapses">
           <div className="logement-colapses__colapse">
-            <Colapse title="Description" content={datas.description} />
+            <Colapse
+              size="small"
+              title="Description"
+              content={datas.description}
+            />
           </div>
           <div className="logement-colapses__colapse">
-            <Colapse title="Équipements" content={datas.equipments} />
+            <Colapse
+              size="small"
+              liste="true"
+              title="Équipements"
+              content={datas.equipments}
+            />
           </div>
         </div>
       </div>

@@ -23,6 +23,13 @@
   }
 }
 
+.small {
+  font-size: 18px;
+  @media (max-width: 750px) {
+    font-size: 13px;
+  }
+}
+
 .collapse-title-btn {
   transition: transform 0.3s ease-in-out;
   height: 100%;
@@ -48,6 +55,27 @@
   margin-top: 0;
   padding: 20px;
   background-color: $grey-light;
+  @media (max-width: 750px) {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+.collapse-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $grey-light;
+  border-radius: 5px;
+  padding: 20px;
+  @media (max-width: 750px) {
+    padding: 10px;
+  }
+}
+
+.collapse-list-content {
+  border-radius: 5px;
+  font-size: 18px;
   @media (max-width: 750px) {
     font-size: 12px;
   }
