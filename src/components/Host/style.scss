@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.host-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.host-title {
+  color: $light-red;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+  text-align: right;
+  @media (max-width: 750px) {
+    font-size: 12px;
+  }
+}
+
+.host-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  @media (max-width: 750px) {
+    width: 32px;
+    height: 32px;
+  }
+}

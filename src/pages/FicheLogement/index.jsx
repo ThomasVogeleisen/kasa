@@ -4,11 +4,11 @@ import logements from '../../datas/logements'
 import Carousel from '../../components/Carousel'
 import Colapse from '../../components/Colapse'
 import Tag from '../../components/Tag'
+import Profil from '../../components/Profil'
 
 function FicheLogement() {
   const { idLogement } = useParams()
   const datas = logements.filter((logement) => logement.id === idLogement)[0]
-  console.log(datas)
   return (
     <main>
       <div className="logement-content main-content">
@@ -21,9 +21,8 @@ function FicheLogement() {
               <Tag tagList={datas.tags} />
             </div>
           </div>
-          <div className="logement-bloc__rate">
-            <div className="logement-bloc__rate--host">{datas.host.name}</div>
-            <div className="logement-bloc__rate--rate">{datas.rating}/5</div>
+          <div className="logement-bloc__profil">
+            <Profil host={datas.host} rating={datas.rating} />
           </div>
         </div>
         <div className="logement-colapses">
@@ -37,7 +36,7 @@ function FicheLogement() {
           <div className="logement-colapses__colapse">
             <Colapse
               size="small"
-              liste="true"
+              liste={true}
               title="Équipements"
               content={datas.equipments}
             />

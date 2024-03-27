@@ -1,7 +1,7 @@
 import './style.scss'
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { useRef } from 'react'
-import PropTypes from 'prop-types'
 import btn_collapse from '../../assets/btn_collapse.png'
 
 function Colapse({ size, liste, title, content }) {
@@ -49,16 +49,19 @@ function Colapse({ size, liste, title, content }) {
   )
 }
 
-Colapse.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  size: PropTypes.string,
-  liste: PropTypes.bool,
-}
-
 Colapse.defaultProps = {
   size: '',
   liste: false,
+}
+
+Colapse.propTypes = {
+  size: PropTypes.string,
+  liste: PropTypes.bool,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
 }
 
 export default Colapse

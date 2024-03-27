@@ -1,4 +1,5 @@
 import './style.scss'
+import PropTypes from 'prop-types'
 
 function Tag({ tagList }) {
   return (
@@ -10,6 +11,10 @@ function Tag({ tagList }) {
       ))}
     </>
   )
+}
+
+Tag.propTypes = {
+  tagList: PropTypes.array.isRequired,
 }
 
 export default Tag

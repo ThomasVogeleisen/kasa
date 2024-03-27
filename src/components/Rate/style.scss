@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.rate-container {
+  text-align: right;
+  margin-top: 5px;
+  @media (max-width: 750px) {
+    margin-top: 21px;
+  }
+}
+
+.star {
+  @media (max-width: 750px) {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,4 +1,5 @@
 import './style.scss'
+import PropTypes from 'prop-types'
 import btn_carousel from '../../assets/btn_carousel.png'
 import { useState } from 'react'
 
@@ -47,6 +48,10 @@ function Carousel({ pictures }) {
       )}
     </div>
   )
+}
+
+Carousel.propTypes = {
+  pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 export default Carousel

@@ -1,4 +1,5 @@
 import './style.scss'
+import PropTypes from 'prop-types'
 
 function Banner({ title, image, altImage }) {
   return (
@@ -11,6 +12,12 @@ function Banner({ title, image, altImage }) {
       )}
     </div>
   )
+}
+
+Banner.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string.isRequired,
+  altImage: PropTypes.string.isRequired,
 }
 
 export default Banner

@@ -1,4 +1,5 @@
 import './style.scss'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 function Card({ id, title, style }) {
@@ -9,6 +10,12 @@ function Card({ id, title, style }) {
       </div>
     </Link>
   )
+}
+
+Card.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  style: PropTypes.object,
 }
 
 export default Card
