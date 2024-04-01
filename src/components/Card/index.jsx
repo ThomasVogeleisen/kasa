@@ -6,7 +6,9 @@ function Card({ id, title, style }) {
   return (
     <Link className="card-link" to={`/FicheLogement/${id}`}>
       <div style={{ ...style }} className="card">
-        <p className="cart-title">{title}</p>
+        <div className="filter-link">
+          <p className="cart-title">{title}</p>
+        </div>
       </div>
     </Link>
   )
