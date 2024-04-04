@@ -1,5 +1,5 @@
 import './style.scss'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import logements from '../../datas/logements'
 import Carousel from '../../components/Carousel'
 import Colapse from '../../components/Colapse'
@@ -9,6 +9,12 @@ import Profil from '../../components/Profil'
 function FicheLogement() {
   const { idLogement } = useParams()
   const datas = logements.filter((logement) => logement.id === idLogement)[0]
+
+  //Verifier si le logement existe sinon renvoyer vers la page 404
+  if (!datas) {
+    return <Navigate to="/404" />
+  }
+
   return (
     <main>
       <div className="logement-content main-content">
